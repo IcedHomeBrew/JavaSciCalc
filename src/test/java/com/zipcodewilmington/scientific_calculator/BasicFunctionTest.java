@@ -20,4 +20,22 @@ public class BasicFunctionTest {
 
         Assert.assertEquals(expected,actual,0.001);
     }
+    @Test
+    public void testSubtract() {
+        //Given
+        BasicFunctions addTest = new BasicFunctions();
+        double input1 = 18;
+        double input2 = 7;
+        double expected = 11;
+
+        //When
+        double actual = BasicFunctions.subtractIt(18, 7);
+        //Then
+
+        Assert.assertEquals(expected, actual, 0.001);
+
+    }
+
+
+
 }
