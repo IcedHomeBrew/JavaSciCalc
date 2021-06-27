@@ -18,6 +18,22 @@ public class Calculator {
         }
     }
 
+    public static void setStored(double valueToStore){
+        stored = valueToStore;
+    }
+
+    public static void setState(double valueToStore){
+        state = valueToStore;
+    }
+
+    public static double getState(){
+        return state;
+    }
+
+    public static double getStored(){
+        return stored;
+    }
+
     public static void basicOptionsMenu(){
         int input;
 
@@ -49,9 +65,13 @@ public class Calculator {
                 state = product;
                 break;
             case 4:
-                Double quotient = BasicFunctions.divideIt(inputA, inputB);
-                Console.println(quotient.toString());
-                state = quotient;
+                if(inputA == 0 || inputB == 0){
+                    Console.println("ERR");
+                } else {
+                    Double quotient = BasicFunctions.divideIt(inputA, inputB);
+                    Console.println(quotient.toString());
+                    state = quotient;
+                }
                 break;
             default:
                 topMenu();
@@ -71,10 +91,5 @@ public class Calculator {
         //selectFromScientificMenu(input);
     }
 
-    public static void selectFromBasicMenu(Integer input){
-        switch(input){
-            case 1: //do the3 code for adding
 
-        }
-    }
 }
