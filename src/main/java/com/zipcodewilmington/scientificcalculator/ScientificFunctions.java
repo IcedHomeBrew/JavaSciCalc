@@ -26,7 +26,7 @@ public class ScientificFunctions {
     //Accepts a double value, converts to Radians and passes the result to Math.tan
     //the product is returned to the caller
     public static Double getTangent(Double valueToTangent){
-        return Math.tan(valueToTangent);
+        return Math.tan(Math.toRadians(valueToTangent));
     }
 
     //getInverseSine
@@ -47,7 +47,7 @@ public class ScientificFunctions {
     //Accepts a double value, converts to Radians and passes the result to Math.atan
     //the product is returned to the caller
     public static Double getInverseTangent(Double valueToTangent){
-        return Math.atan(valueToTangent);
+        return Math.atan(Math.toRadians(valueToTangent));
     }
 
     ///////////////////////////////////////
@@ -55,7 +55,7 @@ public class ScientificFunctions {
     ///////////////////////////////////////
 
     //getFactorial
-    public static Double getFactorial(int factor){
+    public static Integer getFactorial(int factor){
         return (factor == 1 || factor == 0) ? 1 : factor * getFactorial(factor - 1);
     }
 

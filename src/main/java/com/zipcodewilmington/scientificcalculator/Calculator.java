@@ -43,7 +43,7 @@ public class Calculator {
 
     public static void selectFromBasicMenu(Integer input){
         switch(input){
-            case 1:
+            case 1: //do the3 code for adding
 
         }
     }
