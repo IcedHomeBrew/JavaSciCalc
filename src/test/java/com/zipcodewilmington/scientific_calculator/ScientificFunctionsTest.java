@@ -13,7 +13,7 @@ public class ScientificFunctionsTest {
         double actual = ScientificFunctions.getSine(baseValue);
         //Then
 
-        Assert.assertEquals(expected, actual);
+        Assert.assertEquals(expected, actual,0.0001);
     }
 
 }
