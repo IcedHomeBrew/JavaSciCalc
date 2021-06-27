@@ -16,10 +16,6 @@ public class MainApplication {
 
     }
 
-    public Double state = 0.00;
-    public Double memoryValue = 0.00;
-    public int currentDisplayMode = 3;
-    public String currentUnitsMode = "degrees";
 
 
 }
