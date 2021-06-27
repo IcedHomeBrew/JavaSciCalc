@@ -27,6 +27,7 @@ public class Console {
         println(prompt);
         String userInput = scanner.nextLine();
         return Integer.valueOf(userInput);
+
     }
 
     public static Double getDoubleInput(String prompt) {

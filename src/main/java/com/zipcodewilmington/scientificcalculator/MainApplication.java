@@ -8,6 +8,7 @@ import com.zipcodewilmington.scientificcalculator.operations.OperationRequest;
  */
 public class MainApplication {
     public static void main(String[] args) {
+
         Global global = Global.getInstance();
         global.init();
         Input input = new Input(global.getOperations());
@@ -27,9 +28,14 @@ public class MainApplication {
         Console.println(""); // bye message
 
 
-
-
     }
+
+    public Double state = 0.00;
+    public Double memoryValue = 0.00;
+    public int currentDisplayMode = 3;
+    public String currentUnitsMode = "degrees";
+
+
 }
 
 
