@@ -6,7 +6,6 @@ public abstract class Operation {
     public abstract String getExample();
     public boolean validate (String[] stringArray) {
         return true;
-
     }
 
 

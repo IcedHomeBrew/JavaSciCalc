@@ -1,5 +1,4 @@
 package com.zipcodewilmington.scientificcalculator.operations;
-
 import com.zipcodewilmington.scientificcalculator.Console;
 
 public class AddOperation extends Operation{

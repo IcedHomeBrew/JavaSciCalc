@@ -1,5 +1,4 @@
 package com.zipcodewilmington.scientificcalculator;
-
 import com.zipcodewilmington.scientificcalculator.operations.Operation;
 import com.zipcodewilmington.scientificcalculator.operations.OperationRequest;
 
