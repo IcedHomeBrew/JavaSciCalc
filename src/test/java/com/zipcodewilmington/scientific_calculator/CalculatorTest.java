@@ -4,6 +4,7 @@ import com.zipcodewilmington.scientificcalculator.Console;
 import junit.framework.Assert;
 import org.junit.Test;
 
+/*
 public class CalculatorTest {
     @Test
     public void testTopMenu() {
@@ -14,6 +15,18 @@ public class CalculatorTest {
         String actual = null; //testing
         // Then
         Assert.assertEquals(expectedInput, actual);
+    }
+    @Test
+    public void basicOptionsMenu() {
+        // Given
 
     }
+    @Test
+    public void scientificOptionsMenu() {
+
+    }
+
+
 }
+ */
+

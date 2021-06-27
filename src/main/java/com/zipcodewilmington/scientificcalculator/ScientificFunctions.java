@@ -55,7 +55,7 @@ public class ScientificFunctions {
     ///////////////////////////////////////
 
     //getFactorial
-    public static Double getFactorial(int factor){
+    public static Integer getFactorial(int factor){
         return (factor == 1 || factor == 0) ? 1 : factor * getFactorial(factor - 1);
     }
 

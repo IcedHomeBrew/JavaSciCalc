@@ -65,14 +65,66 @@ public class Calculator {
         Console.println("4: Return to Top Menu");
 
         input = Console.getIntegerInput("Enter number for menu option");
-        //selectFromScientificMenu(input);
-    }
 
-    public static void selectFromBasicMenu(Integer input){
+        // Double inputA = Console.getDoubleInput("First number");
 
-        switch(input){
+        switch (input) {
             case 1:
+                trigOptionsMenu();
+                break;
+            case 2:
+
 
         }
     }
+
+    public static void trigOptionsMenu() {
+        int trigSelector;
+
+        Console.println("1: Sine");
+        Console.println("2: Cosine");
+        Console.println("3: Tangent");
+        Console.println("4: Inverse Sine");
+        Console.println("5: Inverse Cosine");
+        Console.println("6: Inverse Tangent");
+        Console.println("7: Return to Top Menu");
+
+        trigSelector = Console.getIntegerInput("Enter number for Trigonometry menu");
+
+        Double trigNumber = Console.getDoubleInput("First number");
+
+        switch (trigSelector) {
+            case 1:
+                Double sineValue = ScientificFunctions.getSine(trigNumber);
+                Console.println(sineValue.toString());
+                state = sineValue;
+                break;
+            case 2:
+                Double cosineValue = ScientificFunctions.getCosine(trigNumber);
+                Console.println(cosineValue.toString());
+                state = cosineValue;
+                break;
+            case 3:
+                Double tangentValue = ScientificFunctions.getCosine(trigNumber);
+                Console.println(tangentValue.toString());
+                state = tangentValue;
+                break;
+            case 4:
+                Double inverseSineValue = ScientificFunctions.getSine(trigNumber);
+                Console.println(inverseSineValue.toString());
+                state = inverseSineValue;
+                break;
+            case 5:
+                Double inverseCosineValue = ScientificFunctions.getCosine(trigNumber);
+                Console.println(inverseCosineValue.toString());
+                state = inverseCosineValue;
+                break;
+            case 6:
+                Double inverseTangentValue = ScientificFunctions.getCosine(trigNumber);
+                Console.println(inverseTangentValue.toString());
+                state = inverseTangentValue;
+                break;
+        }
+    }
+
 }
