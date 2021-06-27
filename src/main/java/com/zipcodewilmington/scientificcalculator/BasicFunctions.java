@@ -1,3 +1,5 @@
+package com.zipcodewilmington.scientificcalculator;
+
 public class BasicFunctions {
     public static Double addIt(double input1, double input2){
         return input1 + input2;
