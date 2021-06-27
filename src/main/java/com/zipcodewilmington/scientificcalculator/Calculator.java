@@ -10,9 +10,9 @@ public class Calculator {
         input = Console.getIntegerInput("Enter number for menu options");
 
         if(input == 2){
-            basicOptionsMenu();
-        } else {
             scientificOptionsMenu();
+        } else {
+            basicOptionsMenu();
         }
     }
 
@@ -42,6 +42,7 @@ public class Calculator {
     }
 
     public static void selectFromBasicMenu(Integer input){
+
         switch(input){
             case 1:
 
