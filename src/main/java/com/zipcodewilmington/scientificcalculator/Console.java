@@ -25,14 +25,15 @@ public class Console {
     public static Integer getIntegerInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        Integer userInput = scanner.nextInt();
-        return userInput;
+        String userInput = scanner.nextLine();
+        return Integer.valueOf(userInput);
+
     }
 
     public static Double getDoubleInput(String prompt) {
         Scanner scanner = new Scanner(System.in);
         println(prompt);
-        Double userInput = scanner.nextDouble();
-        return userInput;
+        String userInput = scanner.nextLine();
+        return Double.valueOf(userInput);
     }
 }
