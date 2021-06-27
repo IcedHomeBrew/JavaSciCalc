@@ -17,8 +17,6 @@ public class MainApplication {
     }
 
     public static void main(String[] args) {
-        setUp();
-        Input input = new Input(operations);
 
         Console.println("Welcome to IcedHomeBrew calculator!");
         Console.println("(Type 'h' for help)"); // directions for user
@@ -35,9 +33,14 @@ public class MainApplication {
         Console.println("Exiting IHB calculator"); // bye message
 
 
-
-
     }
+
+    public Double state = 0.00;
+    public Double memoryValue = 0.00;
+    public int currentDisplayMode = 3;
+    public String currentUnitsMode = "degrees";
+
+
 }
 
 
