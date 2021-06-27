@@ -75,13 +75,19 @@ public class ScientificFunctions {
         return Math.log(valueToLog);
     }
 
-    //
+    //inverseLog
+    //returns the inverse of a logarithm
+    public static Double inverseLog(double valueToLog){
+        return Math.pow(10, valueToLog);
+    }
 
     //inverseNaturalLog
     //returns the inverse natural logarithm for the provided value (valueToLog)
     public static Double inverseNaturalLog(double valueToLog){
         return Math.exp(valueToLog);
     }
+
+
 
     ///////////////////////////////////////
     // Display Mode Methods
