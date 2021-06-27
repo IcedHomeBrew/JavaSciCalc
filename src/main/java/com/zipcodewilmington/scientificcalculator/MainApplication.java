@@ -1,17 +1,22 @@
 package com.zipcodewilmington.scientificcalculator;
+import com.zipcodewilmington.scientificcalculator.operations.*;
 
-import com.zipcodewilmington.scientificcalculator.operations.Operation;
-import com.zipcodewilmington.scientificcalculator.operations.OperationRequest;
+import java.util.ArrayList;
+import java.util.Collection;
 
 /**
  * Created by leon on 2/9/18.
  */
 public class MainApplication {
-    public static void main(String[] args) {
+    public static Collection<Operation> operations;
+    public static void setUp() {
+        operations = new ArrayList<Operation>();
+        operations.add(new HelpOperation());
+        operations.add(new AddOperation());
+        operations.add(new SubtractionOperation());
+    }
 
-        Global global = Global.getInstance();
-        global.init();
-        Input input = new Input(global.getOperations());
+    public static void main(String[] args) {
 
         Console.println("Welcome to IcedHomeBrew calculator!");
         Console.println("(Type 'h' for help)"); // directions for user
@@ -25,7 +30,7 @@ public class MainApplication {
             // it could be continue which will have a string or break
         }
 
-        Console.println(""); // bye message
+        Console.println("Exiting IHB calculator"); // bye message
 
 
     }
