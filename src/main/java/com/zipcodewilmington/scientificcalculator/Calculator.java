@@ -41,14 +41,17 @@ public class Calculator {
             case 2:
                 Double differ = BasicFunctions.subtractIt(inputA, inputB);
                 Console.println(differ.toString());
+                state = differ;
                 break;
             case 3:
                 Double product = BasicFunctions.multiplyIt(inputA, inputB);
                 Console.println(product.toString());
+                state = product;
                 break;
             case 4:
                 Double quotient = BasicFunctions.divideIt(inputA, inputB);
                 Console.println(quotient.toString());
+                state = quotient;
                 break;
             default:
                 topMenu();
@@ -90,6 +93,7 @@ public class Calculator {
         Console.println("7: Return to Top Menu");
 
         trigSelector = Console.getIntegerInput("Enter number for Trigonometry menu");
+
 
         Double trigNumber = Console.getDoubleInput("First number");
 
