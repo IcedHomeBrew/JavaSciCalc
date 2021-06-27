@@ -1,6 +1,8 @@
 package com.zipcodewilmington.scientificcalculator;
 
 public class Calculator {
+    private static double state = 0;
+    private static double stored = 0; 
     public static void topMenu(){
         int input;
         //Display options to select mathematical operation
@@ -10,9 +12,9 @@ public class Calculator {
         input = Console.getIntegerInput("Enter number for menu options");
 
         if(input == 2){
-            basicOptionsMenu();
-        } else {
             scientificOptionsMenu();
+        } else {
+            basicOptionsMenu();
         }
     }
 
@@ -26,7 +28,32 @@ public class Calculator {
         Console.println("5: Return to Top Menu");
 
         input = Console.getIntegerInput("Enter number for menu option");
-        selectFromBasicMenu(input);
+
+        int inputA = Console.getIntegerInput("First number");
+        int inputB = Console.getIntegerInput("Second number");
+
+        switch (input) {
+            case 1:
+                Double sum = BasicFunctions.addIt(inputA, inputB);
+                Console.println(sum.toString());
+                state = sum;
+                break;
+            case 2:
+                Double differ = BasicFunctions.subtractIt(inputA, inputB);
+                Console.println(differ.toString());
+                break;
+            case 3:
+                Double product = BasicFunctions.multiplyIt(inputA, inputB);
+                Console.println(product.toString());
+                break;
+            case 4:
+                Double quotient = BasicFunctions.divideIt(inputA, inputB);
+                Console.println(quotient.toString());
+                break;
+            default:
+                topMenu();
+
+        }
     }
 
     public static void scientificOptionsMenu(){
