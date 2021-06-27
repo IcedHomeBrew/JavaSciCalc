@@ -157,17 +157,17 @@ public class ScientificFunctions {
     //memoryAdd
     //Adds currently displayed value to the value stored in memory
     public static void memoryAdd(){
-        //displayValue += memoryValue;   <== Replace with variables for displayed value and value stored in memory
+        Calculator.setStored(Calculator.getState());
     }
 
     //memoryClear
     //Clears value currently stored in memory
     public static void memoryClear(){
-        //memoryValue = 0;  <== Replace with variable representing value stored in memory
+        Calculator.setStored(0);
     }
 
     //memoryRecall
-    public static void memoryRecall(){
-        //displayValue = memoryValue;  <== Replace with variables for displayed value and value stored in memory
+    public static double memoryRecall(){
+        return Calculator.getStored();
     }
 }
