@@ -10,7 +10,7 @@ public class MainApplication {
         Console.println("Welcome to IcedHomeBrew calculator!");
         Console.println("(Type 'h' for help)"); // directions for user
 
-        Console.println("Exiting IHB calculator"); // bye message
+
 
 
     }
