@@ -15,7 +15,7 @@ public class BasicFunctionTest {
         double expected = 13.0;
 
         //When
-        double actual = BasicFunctions.addIt(7,6);
+        double actual = addTest.addIt(input1,input2);
         //Then
 
         Assert.assertEquals(expected,actual,0.001);
