@@ -19,7 +19,7 @@ public class Calculator {
             Console.getIntegerInput("Please try again...Enter a number from the menu options \n>");
             topMenu();
         }
-
+    // Console.println("Put in a number!");
     }
 
     public static void setStored(double valueToStore){

@@ -9,24 +9,22 @@ public class CalculatorTest {
     @Test
     public void testTopMenu() {
         // Given
-        Integer expectedInput = 1;
+        Calculator topMenuTest = new Calculator();
+        int input = 1; //testing
         String expectedOutput = "1: Basic";
         // When
-        String actual = null; //testing
-        // Then
-        Assert.assertEquals(expectedInput, actual);
+        String actual = Calculator.topMenu();
+
+        Assert.assertEquals(expectedOutput, actual);
     }
     @Test
     public void basicOptionsMenu() {
         // Given
-
     }
     @Test
     public void scientificOptionsMenu() {
 
     }
-
-
 }
- */
+*/
 
