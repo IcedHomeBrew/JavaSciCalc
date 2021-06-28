@@ -124,5 +124,5 @@ public class Calculator {
         //selectFromScientificMenu(input);
     }
 
-    
+
 }
