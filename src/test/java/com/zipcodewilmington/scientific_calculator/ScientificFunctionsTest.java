@@ -46,7 +46,7 @@ public class ScientificFunctionsTest {
     public void testInverseSine(){
         //Given
         double baseValue = -1;
-        double expected = -1.5882;
+        double expected = -0.0174;
         //When
         double actual = ScientificFunctions.getInverseSine(baseValue);
         //Then
