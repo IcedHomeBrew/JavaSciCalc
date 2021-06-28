@@ -269,8 +269,5 @@ public class Calculator {
         }
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> ff1a90d7416c5e6d56ca1b40e7b9367bf9ab4a37
 }
