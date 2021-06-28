@@ -3,7 +3,7 @@ package com.zipcodewilmington.scientificcalculator;
 public class Calculator {
     private static double state = 0;
     private static double stored = 0; 
-    public static void topMenu(){
+    public static void topMenu() {
         int input;
         //Display options to select mathematical operation
         Console.println("Select the type of mathematical operation to perform");
@@ -11,7 +11,6 @@ public class Calculator {
         Console.println("2: Scientific");
         input = Console.getIntegerInput("Enter number for menu options");
 
-        if(input == 1){
             basicOptionsMenu();
         } if (input == 2) {
             scientificOptionsMenu();
@@ -38,6 +37,7 @@ public class Calculator {
         return stored;
     }
 
+
     public static void basicOptionsMenu(){
         int input;
 
@@ -45,7 +45,8 @@ public class Calculator {
         Console.println("2: Subtraction");
         Console.println("3: Multiplication");
         Console.println("4: Division");
-        Console.println("5: Return to Top Menu");
+        Console.println("5: More Functions");
+        Console.println("6: Return to Top Menu");
 
         input = Console.getIntegerInput("Enter number for menu option");
 
@@ -77,12 +78,63 @@ public class Calculator {
                     state = quotient;
                 }
                 break;
+            case 5:
+                moreFunctionsMenu();
             default:
                 topMenu();
 
         }
     }
+    public static void moreFunctionsMenu() {
+        //more advanced functions with exponents and whatnot
+        int input;
 
+        Console.println("1: Exponent");
+        Console.println("2: Square");
+        Console.println("3: Square Root of()");
+        Console.println("4: Inverse");
+        Console.println("5: Flip It");
+        Console.println("6: Return to Basic");
+
+        input = Console.getIntegerInput("Enter number for menu option");
+
+        int inputA = Console.getIntegerInput("Base number");
+        int inputB = Console.getIntegerInput("To the Power of");
+        int inputC = Console.getIntegerInput("Square Root of");
+        int inputD = Console.getIntegerInput("Inverse of");
+
+
+        switch (input) {
+            case 1:
+                Double power = BasicFunctions.powerExponent(inputA, inputB);
+                Console.println(power.toString());
+                state = power;
+                break;
+            case 2:
+                Double square = BasicFunctions.squareIt(inputA);
+                Console.println(square.toString());
+                state = square;
+                break;
+            case 3:
+                Double sqrt = BasicFunctions.squareRootIt(inputC);
+                Console.println(sqrt.toString());
+                state = sqrt;
+                break;
+            case 4:
+                Double inverse = BasicFunctions.inverseIt(inputD);
+                Console.println(inverse.toString());
+                state = inverse;
+                break;
+            case 5:
+                Double flip = BasicFunctions.changeSigns(inputA);
+                Console.println(flip.toString());
+                state = flip;
+                break;
+            default:
+                basicOptionsMenu();
+
+        }
+    }
     public static void scientificOptionsMenu(){
         int input;
 
@@ -171,7 +223,6 @@ public class Calculator {
                 topMenu();
         }
     }
-
 
     private static void logOptionsMenu() {
         int logSelector;
