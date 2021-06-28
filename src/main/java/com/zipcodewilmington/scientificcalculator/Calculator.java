@@ -11,6 +11,7 @@ public class Calculator {
         Console.println("2: Scientific");
         input = Console.getIntegerInput("Enter number for menu options");
 
+        if (input ==1) {
             basicOptionsMenu();
         } if (input == 2) {
             scientificOptionsMenu();
@@ -267,5 +268,6 @@ public class Calculator {
 
         }
     }
+
 
 }
