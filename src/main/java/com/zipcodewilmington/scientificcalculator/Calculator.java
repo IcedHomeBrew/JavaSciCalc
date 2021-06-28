@@ -60,6 +60,7 @@ public class Calculator {
                 Double sum = BasicFunctions.addIt(inputA, inputB);
                 Console.println(sum.toString());
                 state = sum;
+                basicOptionsMenu();
                 break;
             case 2:
                 inputA = Console.getIntegerInput("First number");
@@ -67,6 +68,7 @@ public class Calculator {
                 Double differ = BasicFunctions.subtractIt(inputA, inputB);
                 Console.println(differ.toString());
                 state = differ;
+                basicOptionsMenu();
                 break;
             case 3:
                 inputA = Console.getIntegerInput("First number");
@@ -74,6 +76,7 @@ public class Calculator {
                 Double product = BasicFunctions.multiplyIt(inputA, inputB);
                 Console.println(product.toString());
                 state = product;
+                basicOptionsMenu();
                 break;
             case 4:
                 inputA = Console.getIntegerInput("First number");
@@ -85,6 +88,7 @@ public class Calculator {
                     Console.println(quotient.toString());
                     state = quotient;
                 }
+                basicOptionsMenu();
                 break;
             case 5:
                 moreFunctionsMenu();
@@ -171,6 +175,7 @@ public class Calculator {
                 Integer factorialValue = ScientificFunctions.getFactorial(inputB);
                 Console.println(factorialValue.toString());
                 state = factorialValue;
+                scientificOptionsMenu();
                 break;
             case 3:
                 logOptionsMenu();
@@ -205,36 +210,42 @@ public class Calculator {
                 Double sineValue = ScientificFunctions.getSine(trigNumber);
                 Console.println(sineValue.toString());
                 state = sineValue;
+                trigOptionsMenu();
                 break;
             case 2:
                 trigNumber = Console.getDoubleInput("First number");
                 Double cosineValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(cosineValue.toString());
                 state = cosineValue;
+                trigOptionsMenu();
                 break;
             case 3:
                 trigNumber = Console.getDoubleInput("First number");
                 Double tangentValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(tangentValue.toString());
                 state = tangentValue;
+                trigOptionsMenu();
                 break;
             case 4:
                 trigNumber = Console.getDoubleInput("First number");
                 Double inverseSineValue = ScientificFunctions.getSine(trigNumber);
                 Console.println(inverseSineValue.toString());
                 state = inverseSineValue;
+                trigOptionsMenu();
                 break;
             case 5:
                 trigNumber = Console.getDoubleInput("First number");
                 Double inverseCosineValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(inverseCosineValue.toString());
                 state = inverseCosineValue;
+                trigOptionsMenu();
                 break;
             case 6:
                 trigNumber = Console.getDoubleInput("First number");
                 Double inverseTangentValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(inverseTangentValue.toString());
                 state = inverseTangentValue;
+                trigOptionsMenu();
                 break;
             case 7:
                 trigOptionsMenu();
@@ -263,27 +274,31 @@ public class Calculator {
                 Double logValue = ScientificFunctions.getSine(logNumber);
                 Console.println(logValue.toString());
                 state = logValue;
+                logOptionsMenu();
                 break;
             case 2:
                 logNumber = Console.getDoubleInput("First number");
                 Double naturalLogValue = ScientificFunctions.getCosine(logNumber);
                 Console.println(naturalLogValue.toString());
                 state = naturalLogValue;
+                logOptionsMenu();
                 break;
             case 3:
                 logNumber = Console.getDoubleInput("First number");
                 Double inverseLogValue = ScientificFunctions.getCosine(logNumber);
                 Console.println(inverseLogValue.toString());
                 state = inverseLogValue;
+                logOptionsMenu();
                 break;
             case 4:
                 logNumber = Console.getDoubleInput("First number");
                 Double inverseNaturalLogValue = ScientificFunctions.getSine(logNumber);
                 Console.println(inverseNaturalLogValue.toString());
                 state = inverseNaturalLogValue;
+                logOptionsMenu();
                 break;
             case 5:
-                logOptionsMenu();
+                trigOptionsMenu();
 
             default:
                 topMenu();
