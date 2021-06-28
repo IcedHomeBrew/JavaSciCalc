@@ -50,27 +50,34 @@ public class Calculator {
         Console.println("6: Return to Top Menu");
 
         input = Console.getIntegerInput("Enter number for menu option");
-
-        int inputA = Console.getIntegerInput("First number");
-        int inputB = Console.getIntegerInput("Second number");
+        int inputA;
+        int inputB;
 
         switch (input) {
             case 1:
+                inputA = Console.getIntegerInput("First number");
+                inputB = Console.getIntegerInput("Second number");
                 Double sum = BasicFunctions.addIt(inputA, inputB);
                 Console.println(sum.toString());
                 state = sum;
                 break;
             case 2:
+                inputA = Console.getIntegerInput("First number");
+                inputB = Console.getIntegerInput("Second number");
                 Double differ = BasicFunctions.subtractIt(inputA, inputB);
                 Console.println(differ.toString());
                 state = differ;
                 break;
             case 3:
+                inputA = Console.getIntegerInput("First number");
+                inputB = Console.getIntegerInput("Second number");
                 Double product = BasicFunctions.multiplyIt(inputA, inputB);
                 Console.println(product.toString());
                 state = product;
                 break;
             case 4:
+                inputA = Console.getIntegerInput("First number");
+                inputB = Console.getIntegerInput("Second number");
                 if(inputA == 0 || inputB == 0){
                     Console.println("ERR");
                 } else {
@@ -99,34 +106,40 @@ public class Calculator {
 
         input = Console.getIntegerInput("Enter number for menu option");
 
-        int inputA = Console.getIntegerInput("Base number");
-        int inputB = Console.getIntegerInput("To the Power of");
-        int inputC = Console.getIntegerInput("Square Root of");
-        int inputD = Console.getIntegerInput("Inverse of");
+        int inputA;
+        int inputB;
+        int inputC;
+        int inputD;
 
 
         switch (input) {
             case 1:
+                inputA = Console.getIntegerInput("Base number");
+                inputB = Console.getIntegerInput("To the Power of");
                 Double power = BasicFunctions.powerExponent(inputA, inputB);
                 Console.println(power.toString());
                 state = power;
                 break;
             case 2:
+                inputA = Console.getIntegerInput("Base number");
                 Double square = BasicFunctions.squareIt(inputA);
                 Console.println(square.toString());
                 state = square;
                 break;
             case 3:
+                inputC = Console.getIntegerInput("Square Root of");
                 Double sqrt = BasicFunctions.squareRootIt(inputC);
                 Console.println(sqrt.toString());
                 state = sqrt;
                 break;
             case 4:
+                inputD = Console.getIntegerInput("Square Root of");
                 Double inverse = BasicFunctions.inverseIt(inputD);
                 Console.println(inverse.toString());
                 state = inverse;
                 break;
             case 5:
+                inputA = Console.getIntegerInput("Square Root of");
                 Double flip = BasicFunctions.changeSigns(inputA);
                 Console.println(flip.toString());
                 state = flip;
@@ -184,42 +197,47 @@ public class Calculator {
         trigSelector = Console.getIntegerInput("Enter a number from the Trigonometry menu");
 
 
-        Double trigNumber = Console.getDoubleInput("First number");
+        Double trigNumber;
 
         switch (trigSelector) {
             case 1:
+                trigNumber = Console.getDoubleInput("First number");
                 Double sineValue = ScientificFunctions.getSine(trigNumber);
                 Console.println(sineValue.toString());
                 state = sineValue;
                 break;
             case 2:
+                trigNumber = Console.getDoubleInput("First number");
                 Double cosineValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(cosineValue.toString());
                 state = cosineValue;
                 break;
             case 3:
+                trigNumber = Console.getDoubleInput("First number");
                 Double tangentValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(tangentValue.toString());
                 state = tangentValue;
                 break;
             case 4:
+                trigNumber = Console.getDoubleInput("First number");
                 Double inverseSineValue = ScientificFunctions.getSine(trigNumber);
                 Console.println(inverseSineValue.toString());
                 state = inverseSineValue;
                 break;
             case 5:
+                trigNumber = Console.getDoubleInput("First number");
                 Double inverseCosineValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(inverseCosineValue.toString());
                 state = inverseCosineValue;
                 break;
             case 6:
+                trigNumber = Console.getDoubleInput("First number");
                 Double inverseTangentValue = ScientificFunctions.getCosine(trigNumber);
                 Console.println(inverseTangentValue.toString());
                 state = inverseTangentValue;
                 break;
             case 7:
                 trigOptionsMenu();
-
             default:
                 topMenu();
         }
@@ -237,25 +255,29 @@ public class Calculator {
         logSelector = Console.getIntegerInput("Enter a number from the Trigonometry menu");
 
 
-        Double logNumber = Console.getDoubleInput("First number");
+        Double logNumber;
 
         switch (logSelector) {
             case 1:
+                logNumber = Console.getDoubleInput("First number");
                 Double logValue = ScientificFunctions.getSine(logNumber);
                 Console.println(logValue.toString());
                 state = logValue;
                 break;
             case 2:
+                logNumber = Console.getDoubleInput("First number");
                 Double naturalLogValue = ScientificFunctions.getCosine(logNumber);
                 Console.println(naturalLogValue.toString());
                 state = naturalLogValue;
                 break;
             case 3:
+                logNumber = Console.getDoubleInput("First number");
                 Double inverseLogValue = ScientificFunctions.getCosine(logNumber);
                 Console.println(inverseLogValue.toString());
                 state = inverseLogValue;
                 break;
             case 4:
+                logNumber = Console.getDoubleInput("First number");
                 Double inverseNaturalLogValue = ScientificFunctions.getSine(logNumber);
                 Console.println(inverseNaturalLogValue.toString());
                 state = inverseNaturalLogValue;
