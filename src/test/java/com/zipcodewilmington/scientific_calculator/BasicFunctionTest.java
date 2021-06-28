@@ -29,7 +29,7 @@ public class BasicFunctionTest {
         double expected = 11;
 
         //When
-        double actual = BasicFunctions.subtractIt(18, 7);
+        double actual = addTest.subtractIt(input1, input2);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
@@ -44,7 +44,7 @@ public class BasicFunctionTest {
         double expected = 40;
 
         //When
-        double actual = BasicFunctions.multiplyIt(5, 8);
+        double actual = addTest.multiplyIt(input1, input2);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
@@ -59,7 +59,7 @@ public class BasicFunctionTest {
         double expected = 5;
 
         //When
-        double actual = BasicFunctions.divideIt(25, 5);
+        double actual = addTest.divideIt(input1, input2);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
@@ -72,7 +72,7 @@ public class BasicFunctionTest {
         double expected = 36;
 
         //When
-        double actual = BasicFunctions.squareIt(6);
+        double actual = addTest.squareIt(input);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
@@ -85,7 +85,7 @@ public class BasicFunctionTest {
         double expected = 4;
 
         //When
-        double actual = BasicFunctions.squareRootIt(16);
+        double actual = addTest.squareRootIt(input);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
@@ -98,7 +98,7 @@ public class BasicFunctionTest {
         double expected = 0.0625;
 
         //When
-        double actual = BasicFunctions.inverseIt(16);
+        double actual = addTest.inverseIt(input);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
@@ -111,7 +111,7 @@ public class BasicFunctionTest {
         double expected = -28;
 
         //When
-        double actual = BasicFunctions.changeSigns(28);
+        double actual = addTest.changeSigns(input);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
@@ -125,7 +125,7 @@ public class BasicFunctionTest {
         double expected = 64;
 
         //When
-        double actual = BasicFunctions.powerExponent(4, 3);
+        double actual = addTest.powerExponent(input1, input2);
         //Then
 
         Assert.assertEquals(expected, actual, 0.001);
